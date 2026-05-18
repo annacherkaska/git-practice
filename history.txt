@@ -10,3 +10,11 @@ git push -u origin feature
 git commit --amend -m "Add readme and update gitignore ammend"
 git push -f origin feature
 doskey /history > history.txt
+git add history.txt
+git commit -m "Add history file"
+git push origin main
+git checkout feature
+git push -f origin feature
+git checkout main
+git merge feature
+doskey /history > history.txt
