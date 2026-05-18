@@ -1,0 +1,12 @@
+cd C:\Users\ICH
+git clone https://github.com/annacherkaska/git-practice.git
+cd git-practice
+git checkout -b feature
+echo # My Practice Project > README.md
+echo *.log >> .gitignore
+git add .
+git commit -m "Add readme and update gitignore"
+git push -u origin feature
+git commit --amend -m "Add readme and update gitignore ammend"
+git push -f origin feature
+doskey /history > history.txt
